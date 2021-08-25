@@ -1,0 +1,214 @@
+html{
+  scroll-behavior: smooth;
+}
+@font-face{
+  font-family: "Tatsam";
+  src: url(Tatsam.otf);
+  /*src: url(./font/Tatsam-light.otf);*/
+  src: url(Tatsam-Medium.otf);
+  /*src: url(./font/Tatsam Bengali Rnd Book [TheFontsMaster.com].otf)
+  src: url(./font/Tatsam Bengali Rnd Demi [TheFontsMaster.com].otf)*/
+  
+}
+
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5rem;
+  font-family: "Varela Round", sans-serif;
+}
+h1{
+  font-family: "Tatsam";
+  font-weight: 100;
+}
+:root{
+  --blue:#3750A1;
+  --red:#CA5A42;
+  --light:#FEC973;
+}
+span {
+  font-family: "Tatsam"
+}
+.red{
+  font-family: "Tatsam";
+  color: var(--red);
+  margin-top: 40px;
+}
+.button1{
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: var(--red);
+  color:white;
+  
+}
+.button1:hover{
+  background-color: #A35839;
+}
+.button1 span i{
+  transition: .5s;
+}
+.button1:hover  i{
+  transform: translateX(5px);
+  
+  
+}
+header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  color: var(--blue);
+  box-shadow: 1px 0 5px #ECEDFF;
+  position: fixed;
+  top:0;
+  background-color: white;
+}
+.hero .text .button1{
+    margin-top: 15px;
+  }
+header nav ul{
+  list-style: none;
+  display: flex;
+}
+header nav ul li{
+  margin-left: 20px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: var(--blue);
+}
+header nav ul li a:hover{
+  color:var(--red);
+}
+.hero{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 60px;
+  margin:90px 0;
+}
+
+.hero .image {
+  width: 50%;
+}
+.hero .image img{
+  width: 100%;
+}
+.hero .text button a{
+  text-decoration: none;
+  color: white;
+}
+
+.ayat h3, p{
+  font-family: "Tatsam";
+}
+.ayat h3{
+  color: var(--blue);
+  margin-bottom: 60px;
+}
+.ayat{
+  text-align: center;
+  padding: 0 100px;
+  
+}
+.ayat .card{
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr ;
+  grid-gap: 50px;
+}
+.ayat .card .ayat-box{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 1px solid var(--light);
+}
+.ayat .card .ayat-box p{
+  margin: 20px 0;
+  font-weight: 100;
+}
+.ayat .card .ayat-box img{
+  width: 100px;  
+}
+
+.hadis {
+  margin-top: 50px;
+
+  padding: 40px 100px;
+  
+}
+.hadis .card .ayat-box{
+  background-color: #FFFDF7;
+  padding: 0 20px;
+}
+
+footer{
+  text-align: center;
+  padding: 20px;
+  color:white;
+  background-color: var(--blue);
+}
+
+.daily{
+  background-color: var(--blue);
+  margin-top:40px;
+  padding: 40px 0;
+  text-align: center;
+}
+.daily h4{
+  font-family: "Tatsam";
+  color: white;
+}
+.daily .input{
+  display: flex;
+  flex-direction: column;
+  padding: 0 20vw;
+}
+.daily .input input{
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin:10px 0;
+  outline: none;
+}
+.daily .input .button1 i{
+  display :none; 
+  transition: .5s;
+}
+.daily .input button {
+  
+  transition: .5s;
+}
+.daily .input .button1:focus i{
+  display: block;
+}
+@media(max-width:500px){
+  header {
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5px;
+  }
+  .hero{
+    margin-top: 130px;
+    flex-direction: column;
+    text-align: center;
+  }
+ 
+  .hero .image {
+    width: 100%;
+    margin-top: 15px;
+  }
+  header .logo {
+    margin-bottom: 10px;
+  }
+  
+  .ayat {
+    padding: 0 30px;
+    
+  }
+
+}
